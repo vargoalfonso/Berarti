@@ -1,0 +1,1474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D049E22293A1F0400797D02 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D049E21293A1F0400797D02 /* PrivacyPolicyView.swift */; };
+		6D049E24293A414E00797D02 /* SocialBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D049E23293A414E00797D02 /* SocialBannerView.swift */; };
+		6D0E99882933A8CC00485C9F /* EmotionEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E99862933A8CC00485C9F /* EmotionEntity+CoreDataClass.swift */; };
+		6D0E99892933A8CC00485C9F /* EmotionEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E99872933A8CC00485C9F /* EmotionEntity+CoreDataProperties.swift */; };
+		6D0E998B2933A90C00485C9F /* EmotionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E998A2933A90C00485C9F /* EmotionModel.swift */; };
+		6D0E998E2933B1EE00485C9F /* EmotionHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E998D2933B1EE00485C9F /* EmotionHistoryView.swift */; };
+		6D0E99902933B2A900485C9F /* EmotionHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E998F2933B2A900485C9F /* EmotionHistoryViewModel.swift */; };
+		6D0E99922933B68B00485C9F /* EmotionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E99912933B68B00485C9F /* EmotionCell.swift */; };
+		6D0E99942933C44000485C9F /* MainTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E99932933C44000485C9F /* MainTabViewModel.swift */; };
+		6D0E99962933C99300485C9F /* animation_emotion_healthy.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E99952933C99300485C9F /* animation_emotion_healthy.json */; };
+		6D0E99982933C9B300485C9F /* animation_emotion_sick.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E99972933C9B300485C9F /* animation_emotion_sick.json */; };
+		6D0E999A2933C9EB00485C9F /* animation_emotion_stressed.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E99992933C9EB00485C9F /* animation_emotion_stressed.json */; };
+		6D0E999C2933CA0500485C9F /* animation_emotion_sad.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E999B2933CA0500485C9F /* animation_emotion_sad.json */; };
+		6D28934A2936742300CB6535 /* OnboardingGreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2893492936742300CB6535 /* OnboardingGreetingView.swift */; };
+		6D28934C2936784300CB6535 /* OnboardingNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D28934B2936784300CB6535 /* OnboardingNameView.swift */; };
+		6D28934E29367D5F00CB6535 /* funfacts.json in Resources */ = {isa = PBXBuildFile; fileRef = 6D28934D29367D5F00CB6535 /* funfacts.json */; };
+		6D28935029367EEC00CB6535 /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D28934F29367EEC00CB6535 /* ArticleDetailView.swift */; };
+		6D28935229367F6C00CB6535 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D28935129367F6C00CB6535 /* ArticleCell.swift */; };
+		6D289354293686A100CB6535 /* FunFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D289353293686A100CB6535 /* FunFact.swift */; };
+		6D2893562936870600CB6535 /* SocialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2893552936870600CB6535 /* SocialViewModel.swift */; };
+		6D289358293692BB00CB6535 /* ReminderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D289357293692BB00CB6535 /* ReminderListCell.swift */; };
+		6D426D072934D12D0058B90A /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D426D062934D12D0058B90A /* DateCell.swift */; };
+		6D7DD12D293B96AA0004C0E7 /* EdgeBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD12C293B96AA0004C0E7 /* EdgeBorder.swift */; };
+		6D7DD133293B98580004C0E7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEA0B82293B1E2600C226FC /* WidgetKit.framework */; };
+		6D7DD134293B98580004C0E7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEA0B84293B1E2600C226FC /* SwiftUI.framework */; };
+		6D7DD137293B98580004C0E7 /* BerARTi_WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD136293B98580004C0E7 /* BerARTi_WidgetBundle.swift */; };
+		6D7DD139293B98580004C0E7 /* BerARTi_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD138293B98580004C0E7 /* BerARTi_Widget.swift */; };
+		6D7DD13F293B98590004C0E7 /* BerARTi-WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6D7DD132293B98580004C0E7 /* BerARTi-WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6D7DD144293B98920004C0E7 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD143293B98920004C0E7 /* WidgetView.swift */; };
+		6D7DD145293B98D30004C0E7 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C7BEF92907F0A100775D5D /* View+Extension.swift */; };
+		6D7DD146293B98D70004C0E7 /* EdgeBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD12C293B96AA0004C0E7 /* EdgeBorder.swift */; };
+		6D7DD147293B998F0004C0E7 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878E2552920DFB700A4E153 /* RoundedCorner.swift */; };
+		6D7DD149293B9AAF0004C0E7 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD148293B9AAF0004C0E7 /* Provider.swift */; };
+		6D7DD14A293B9B9B0004C0E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81EF2712901153200EFAE7C /* Assets.xcassets */; };
+		6D7DD14B293B9BAC0004C0E7 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C7BEEF2907D7FF00775D5D /* Color+Extension.swift */; };
+		6D7DD14C293B9C170004C0E7 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C7BEF32907D8F100775D5D /* Assets.swift */; };
+		6D7DD14D293B9C3B0004C0E7 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E928FF291D225B003CA530 /* Enums.swift */; };
+		6D8159AD2931BA5A007A7040 /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8159AC2931BA5A007A7040 /* HealthView.swift */; };
+		6D9C58FD2934A3EE0003FD31 /* InputEmotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9C58FC2934A3EE0003FD31 /* InputEmotionView.swift */; };
+		6DA8939C2939DF1F006E91A0 /* VitalDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8939B2939DF1F006E91A0 /* VitalDataCell.swift */; };
+		6DA8939E2939ED5A006E91A0 /* HKUnit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8939D2939ED5A006E91A0 /* HKUnit+Extension.swift */; };
+		6DA893A0293A0667006E91A0 /* HealthKitDataCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA8939F293A0667006E91A0 /* HealthKitDataCalculator.swift */; };
+		6DBEEE572935D8DF00742217 /* animation_emotion_normal.json in Resources */ = {isa = PBXBuildFile; fileRef = 6DBEEE562935D8DF00742217 /* animation_emotion_normal.json */; };
+		6DBEEE5A2935FB0C00742217 /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 6DBEEE592935FB0C00742217 /* quotes.json */; };
+		6DBEEE5C2935FB3800742217 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBEEE5B2935FB3800742217 /* Quote.swift */; };
+		6DC3F82D293325E30023018C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 6DC3F82C293325E30023018C /* Lottie */; };
+		6DC3F8342933282A0023018C /* animation_emotion_happy.json in Resources */ = {isa = PBXBuildFile; fileRef = 6DC3F82F293328290023018C /* animation_emotion_happy.json */; };
+		6DC3F8362933282A0023018C /* animation_emotion_anxious.json in Resources */ = {isa = PBXBuildFile; fileRef = 6DC3F831293328290023018C /* animation_emotion_anxious.json */; };
+		6DC3F8372933282A0023018C /* animation_emotion_loved.json in Resources */ = {isa = PBXBuildFile; fileRef = 6DC3F832293328290023018C /* animation_emotion_loved.json */; };
+		6DC3F8382933282A0023018C /* animation_emotion_angry.json in Resources */ = {isa = PBXBuildFile; fileRef = 6DC3F8332933282A0023018C /* animation_emotion_angry.json */; };
+		6DC3F83A293328EA0023018C /* EmotionAnimationViewRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC3F839293328EA0023018C /* EmotionAnimationViewRepresentation.swift */; };
+		6DC3F870293347B70023018C /* EmotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC3F86F293347B70023018C /* EmotionAnimationView.swift */; };
+		6DC749FC29322F5C00F4489B /* MedicineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC749FB29322F5C00F4489B /* MedicineView.swift */; };
+		6DC749FE29322F6800F4489B /* MedicineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC749FD29322F6800F4489B /* MedicineViewModel.swift */; };
+		6DC74A00293238F900F4489B /* SupplementWeekProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC749FF293238F900F4489B /* SupplementWeekProgressCell.swift */; };
+		6DC74A0229323DA400F4489B /* PreviewDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC74A0129323DA400F4489B /* PreviewDevice+Extension.swift */; };
+		6DC74A04293263CE00F4489B /* FunFactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC74A03293263CE00F4489B /* FunFactCell.swift */; };
+		6DC74A07293272B000F4489B /* EmotionSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC74A06293272B000F4489B /* EmotionSelectionView.swift */; };
+		6DC74A09293278F800F4489B /* EmotionGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC74A08293278F800F4489B /* EmotionGridCell.swift */; };
+		6DC74A0C2932825900F4489B /* EmotionIntensityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC74A0B2932825900F4489B /* EmotionIntensityView.swift */; };
+		6DC74A0E2932827900F4489B /* EmotionIntensityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC74A0D2932827800F4489B /* EmotionIntensityViewModel.swift */; };
+		6DC74A11293285B400F4489B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC74A10293285B400F4489B /* ProfileView.swift */; };
+		6DCC50062934F3A300E5B308 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCC50052934F3A300E5B308 /* UIStackView+Extension.swift */; };
+		6DCC500F2935093900E5B308 /* ReminderHistoryEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCC500D2935093900E5B308 /* ReminderHistoryEntity+CoreDataClass.swift */; };
+		6DCC50102935093900E5B308 /* ReminderHistoryEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCC500E2935093900E5B308 /* ReminderHistoryEntity+CoreDataProperties.swift */; };
+		6DD7FECD2938CF8800F9E89B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD7FECC2938CF8800F9E89B /* HealthKitManager.swift */; };
+		B806769F290C00DA00ECF5AB /* MedicineStockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B806769E290C00DA00ECF5AB /* MedicineStockCell.swift */; };
+		B80676A1290C07B000ECF5AB /* DashboardAppointmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80676A0290C07B000ECF5AB /* DashboardAppointmentCell.swift */; };
+		B8118889291572EB00FC89B6 /* AddMedicineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8118888291572EB00FC89B6 /* AddMedicineView.swift */; };
+		B811889229157D5A00FC89B6 /* SelectionChip.swift in Sources */ = {isa = PBXBuildFile; fileRef = B811889129157D5A00FC89B6 /* SelectionChip.swift */; };
+		B814EA692925F0E200EB211C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B814EA652925F0E200EB211C /* SettingsView.swift */; };
+		B814EA6A2925F0E200EB211C /* ChangeNotificationMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B814EA662925F0E200EB211C /* ChangeNotificationMessageView.swift */; };
+		B814EA6B2925F0E200EB211C /* ContactUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B814EA672925F0E200EB211C /* ContactUsView.swift */; };
+		B814EA6E2925FA5400EB211C /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B814EA6D2925FA5400EB211C /* SettingsRowView.swift */; };
+		B814EA7029260C4800EB211C /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B814EA6F29260C4800EB211C /* SettingsViewModel.swift */; };
+		B81A3661291376460037C90E /* AddAppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A3660291376460037C90E /* AddAppointmentView.swift */; };
+		B81A366729137AC20037C90E /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A366329137AC10037C90E /* LocalNotificationManager.swift */; };
+		B81A366829137AC20037C90E /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81A366429137AC10037C90E /* LocalNotification.swift */; };
+		B81EF26E2901153000EFAE7C /* BerARTiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81EF26D2901153000EFAE7C /* BerARTiApp.swift */; };
+		B81EF2722901153200EFAE7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81EF2712901153200EFAE7C /* Assets.xcassets */; };
+		B81EF2752901153200EFAE7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B81EF2742901153200EFAE7C /* Preview Assets.xcassets */; };
+		B81EF2772901153200EFAE7C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81EF2762901153200EFAE7C /* CoreDataStack.swift */; };
+		B81EF2862901186F00EFAE7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81EF2852901186F00EFAE7C /* AppDelegate.swift */; };
+		B81EF28B29011FAB00EFAE7C /* BerARTi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B81EF28929011FAB00EFAE7C /* BerARTi.xcdatamodeld */; };
+		B81FD2182923502400E0AE6D /* AddBloodResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81FD2172923502400E0AE6D /* AddBloodResultViewModel.swift */; };
+		B81FD21A29235D8200E0AE6D /* BloodResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81FD21929235D8200E0AE6D /* BloodResultModel.swift */; };
+		B81FD21D29235EB200E0AE6D /* BloodResultEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81FD21B29235EB200E0AE6D /* BloodResultEntity+CoreDataClass.swift */; };
+		B81FD21E29235EB200E0AE6D /* BloodResultEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81FD21C29235EB200E0AE6D /* BloodResultEntity+CoreDataProperties.swift */; };
+		B821EF92290F89C800879AED /* VitalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821EF91290F89C800879AED /* VitalView.swift */; };
+		B821EF95290F89D600879AED /* AddBloodResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B821EF94290F89D600879AED /* AddBloodResultView.swift */; };
+		B84583A22926698200EC3449 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84583A12926698200EC3449 /* UserDefaults+Extension.swift */; };
+		B878E2522920A37900A4E153 /* TimePickerModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878E2512920A37900A4E153 /* TimePickerModal.swift */; };
+		B878E2542920DB0E00A4E153 /* CTAModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878E2532920DB0E00A4E153 /* CTAModal.swift */; };
+		B878E2562920DFB700A4E153 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878E2552920DFB700A4E153 /* RoundedCorner.swift */; };
+		B878E25B2921131400A4E153 /* AppointmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878E25A2921131400A4E153 /* AppointmentViewModel.swift */; };
+		B878E2602921237200A4E153 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878E25F2921237200A4E153 /* GameScene.swift */; };
+		B878E2622921241F00A4E153 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B878E2612921241F00A4E153 /* GameScene.sks */; };
+		B878E26B292149B500A4E153 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B878E26A292149B500A4E153 /* DashboardViewModel.swift */; };
+		B885C2FA29081C8A00D95722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B885C2F929081C8A00D95722 /* LaunchScreen.storyboard */; };
+		B8A1C1AB291B629400AA833B /* CoreDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A1C1AA291B629400AA833B /* CoreDataRepository.swift */; };
+		B8BE48C8290A4FCE00A7E667 /* PrimaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BE48C7290A4FCE00A7E667 /* PrimaryButtonStyle.swift */; };
+		B8BE48CA290A596E00A7E667 /* SecondaryButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BE48C9290A596E00A7E667 /* SecondaryButtonStyle.swift */; };
+		B8C7BEF02907D7FF00775D5D /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C7BEEF2907D7FF00775D5D /* Color+Extension.swift */; };
+		B8C7BEF22907D87700775D5D /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C7BEF12907D87700775D5D /* OnboardingPageView.swift */; };
+		B8C7BEF42907D8F100775D5D /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C7BEF32907D8F100775D5D /* Assets.swift */; };
+		B8C7BEF62907DA9E00775D5D /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C7BEF52907DA9E00775D5D /* Font+Extension.swift */; };
+		B8C7BEF82907DE8E00775D5D /* OnboardingContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C7BEF72907DE8E00775D5D /* OnboardingContainerView.swift */; };
+		B8C7BEFA2907F0A100775D5D /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C7BEF92907F0A100775D5D /* View+Extension.swift */; };
+		B8C7BEFD2907F31E00775D5D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C7BEFC2907F31E00775D5D /* MainTabView.swift */; };
+		B8C7BF032907F4B300775D5D /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C7BF022907F4B300775D5D /* DashboardView.swift */; };
+		B8C7BF072907F4C400775D5D /* AppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C7BF062907F4C400775D5D /* AppointmentView.swift */; };
+		B8C7BF092907F4CB00775D5D /* SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C7BF082907F4CB00775D5D /* SocialView.swift */; };
+		B8C982C0291E6D5A00CCD8F2 /* ARVModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C982BF291E6D5A00CCD8F2 /* ARVModel.swift */; };
+		B8C982C2291E6EAA00CCD8F2 /* AddMedicineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C982C1291E6EAA00CCD8F2 /* AddMedicineViewModel.swift */; };
+		B8CFFBC72923C2B60087F2ED /* VitalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CFFBC62923C2B60087F2ED /* VitalViewModel.swift */; };
+		B8CFFBC92923C5080087F2ED /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8CFFBC82923C5080087F2ED /* Date+Extension.swift */; };
+		B8D48614292B194A009C7332 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D48613292B194A009C7332 /* HapticsManager.swift */; };
+		B8D48616292B2082009C7332 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D48615292B2082009C7332 /* OnboardingModel.swift */; };
+		B8D48619292B39FD009C7332 /* ChangeNotificationMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D48618292B39FD009C7332 /* ChangeNotificationMessageViewModel.swift */; };
+		B8D4861B292B4C5C009C7332 /* AddAppointmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D4861A292B4C5C009C7332 /* AddAppointmentViewModel.swift */; };
+		B8D4861D292B6272009C7332 /* AppointmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D4861C292B6272009C7332 /* AppointmentModel.swift */; };
+		B8D48620292B63E5009C7332 /* AppointmentEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D4861E292B63E5009C7332 /* AppointmentEntity+CoreDataClass.swift */; };
+		B8D48621292B63E5009C7332 /* AppointmentEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D4861F292B63E5009C7332 /* AppointmentEntity+CoreDataProperties.swift */; };
+		B8D70C6929181586007BA959 /* FormSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D70C6829181586007BA959 /* FormSelector.swift */; };
+		B8D70C6B29181B09007BA959 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D70C6A29181B09007BA959 /* FormTextField.swift */; };
+		B8D8F49D2929362000E893CA /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D8F49C2929362000E893CA /* CallManager.swift */; };
+		B8D8F4A12929363700E893CA /* CXCallUpdate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D8F49E2929363700E893CA /* CXCallUpdate+Extension.swift */; };
+		B8D8F4A22929363700E893CA /* CXProviderConfiguration+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D8F49F2929363700E893CA /* CXProviderConfiguration+Sample.swift */; };
+		B8D8F4A32929363700E893CA /* CXProvider+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D8F4A02929363700E893CA /* CXProvider+Sample.swift */; };
+		B8D8F4A52929369800E893CA /* CallProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D8F4A42929369800E893CA /* CallProvider.swift */; };
+		B8D8F4A7292936E100E893CA /* Notification.Name+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D8F4A6292936E100E893CA /* Notification.Name+Extension.swift */; };
+		B8D8F4A92929375800E893CA /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D8F4A82929375800E893CA /* Data+Extension.swift */; };
+		B8D8F4AC292937FF00E893CA /* AppDelegate+PKPushRegistryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D8F4AB292937FF00E893CA /* AppDelegate+PKPushRegistryDelegate.swift */; };
+		B8E928FE291D2178003CA530 /* MedicineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E928FD291D2178003CA530 /* MedicineModel.swift */; };
+		B8E92900291D225B003CA530 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E928FF291D225B003CA530 /* Enums.swift */; };
+		B8E9290E291D3B22003CA530 /* ReminderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E9290D291D3B22003CA530 /* ReminderModel.swift */; };
+		B8E92917291D49ED003CA530 /* MedicineEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E92913291D49ED003CA530 /* MedicineEntity+CoreDataProperties.swift */; };
+		B8E92918291D49ED003CA530 /* MedicineEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E92914291D49ED003CA530 /* MedicineEntity+CoreDataClass.swift */; };
+		B8E92919291D49ED003CA530 /* ReminderEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E92915291D49ED003CA530 /* ReminderEntity+CoreDataProperties.swift */; };
+		B8E9291A291D49ED003CA530 /* ReminderEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E92916291D49ED003CA530 /* ReminderEntity+CoreDataClass.swift */; };
+		B8FCFF33290ACA3C00D34810 /* BloodResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FCFF32290ACA3C00D34810 /* BloodResultCell.swift */; };
+		B8FCFF35290AD37A00D34810 /* ReminderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FCFF34290AD37A00D34810 /* ReminderCell.swift */; };
+		B8FCFF37290AE49900D34810 /* EmptySpacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FCFF36290AE49900D34810 /* EmptySpacer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D7DD13D293B98590004C0E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B81EF2622901153000EFAE7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D7DD131293B98580004C0E7;
+			remoteInfo = "BerARTi-WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6DEA0B96293B1E2800C226FC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6D7DD13F293B98590004C0E7 /* BerARTi-WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6D049E21293A1F0400797D02 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
+		6D049E23293A414E00797D02 /* SocialBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialBannerView.swift; sourceTree = "<group>"; };
+		6D0E99862933A8CC00485C9F /* EmotionEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmotionEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6D0E99872933A8CC00485C9F /* EmotionEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmotionEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6D0E998A2933A90C00485C9F /* EmotionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionModel.swift; sourceTree = "<group>"; };
+		6D0E998D2933B1EE00485C9F /* EmotionHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionHistoryView.swift; sourceTree = "<group>"; };
+		6D0E998F2933B2A900485C9F /* EmotionHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionHistoryViewModel.swift; sourceTree = "<group>"; };
+		6D0E99912933B68B00485C9F /* EmotionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionCell.swift; sourceTree = "<group>"; };
+		6D0E99932933C44000485C9F /* MainTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewModel.swift; sourceTree = "<group>"; };
+		6D0E99952933C99300485C9F /* animation_emotion_healthy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_emotion_healthy.json; sourceTree = "<group>"; };
+		6D0E99972933C9B300485C9F /* animation_emotion_sick.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_emotion_sick.json; sourceTree = "<group>"; };
+		6D0E99992933C9EB00485C9F /* animation_emotion_stressed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_emotion_stressed.json; sourceTree = "<group>"; };
+		6D0E999B2933CA0500485C9F /* animation_emotion_sad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_emotion_sad.json; sourceTree = "<group>"; };
+		6D2893492936742300CB6535 /* OnboardingGreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingGreetingView.swift; sourceTree = "<group>"; };
+		6D28934B2936784300CB6535 /* OnboardingNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingNameView.swift; sourceTree = "<group>"; };
+		6D28934D29367D5F00CB6535 /* funfacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = funfacts.json; sourceTree = "<group>"; };
+		6D28934F29367EEC00CB6535 /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
+		6D28935129367F6C00CB6535 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		6D289353293686A100CB6535 /* FunFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFact.swift; sourceTree = "<group>"; };
+		6D2893552936870600CB6535 /* SocialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewModel.swift; sourceTree = "<group>"; };
+		6D289357293692BB00CB6535 /* ReminderListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListCell.swift; sourceTree = "<group>"; };
+		6D426D062934D12D0058B90A /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		6D7DD12C293B96AA0004C0E7 /* EdgeBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeBorder.swift; sourceTree = "<group>"; };
+		6D7DD132293B98580004C0E7 /* BerARTi-WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BerARTi-WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D7DD136293B98580004C0E7 /* BerARTi_WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerARTi_WidgetBundle.swift; sourceTree = "<group>"; };
+		6D7DD138293B98580004C0E7 /* BerARTi_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerARTi_Widget.swift; sourceTree = "<group>"; };
+		6D7DD13C293B98590004C0E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D7DD143293B98920004C0E7 /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
+		6D7DD148293B9AAF0004C0E7 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		6D8159AC2931BA5A007A7040 /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
+		6D9C58FC2934A3EE0003FD31 /* InputEmotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputEmotionView.swift; sourceTree = "<group>"; };
+		6DA8939B2939DF1F006E91A0 /* VitalDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalDataCell.swift; sourceTree = "<group>"; };
+		6DA8939D2939ED5A006E91A0 /* HKUnit+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKUnit+Extension.swift"; sourceTree = "<group>"; };
+		6DA8939F293A0667006E91A0 /* HealthKitDataCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitDataCalculator.swift; sourceTree = "<group>"; };
+		6DBEEE562935D8DF00742217 /* animation_emotion_normal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_emotion_normal.json; sourceTree = "<group>"; };
+		6DBEEE592935FB0C00742217 /* quotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quotes.json; sourceTree = "<group>"; };
+		6DBEEE5B2935FB3800742217 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		6DC3F82F293328290023018C /* animation_emotion_happy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_emotion_happy.json; sourceTree = "<group>"; };
+		6DC3F831293328290023018C /* animation_emotion_anxious.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_emotion_anxious.json; sourceTree = "<group>"; };
+		6DC3F832293328290023018C /* animation_emotion_loved.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_emotion_loved.json; sourceTree = "<group>"; };
+		6DC3F8332933282A0023018C /* animation_emotion_angry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animation_emotion_angry.json; sourceTree = "<group>"; };
+		6DC3F839293328EA0023018C /* EmotionAnimationViewRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionAnimationViewRepresentation.swift; sourceTree = "<group>"; };
+		6DC3F86F293347B70023018C /* EmotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionAnimationView.swift; sourceTree = "<group>"; };
+		6DC749FB29322F5C00F4489B /* MedicineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineView.swift; sourceTree = "<group>"; };
+		6DC749FD29322F6800F4489B /* MedicineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineViewModel.swift; sourceTree = "<group>"; };
+		6DC749FF293238F900F4489B /* SupplementWeekProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementWeekProgressCell.swift; sourceTree = "<group>"; };
+		6DC74A0129323DA400F4489B /* PreviewDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PreviewDevice+Extension.swift"; sourceTree = "<group>"; };
+		6DC74A03293263CE00F4489B /* FunFactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactCell.swift; sourceTree = "<group>"; };
+		6DC74A06293272B000F4489B /* EmotionSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionSelectionView.swift; sourceTree = "<group>"; };
+		6DC74A08293278F800F4489B /* EmotionGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionGridCell.swift; sourceTree = "<group>"; };
+		6DC74A0B2932825900F4489B /* EmotionIntensityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionIntensityView.swift; sourceTree = "<group>"; };
+		6DC74A0D2932827800F4489B /* EmotionIntensityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionIntensityViewModel.swift; sourceTree = "<group>"; };
+		6DC74A10293285B400F4489B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		6DCC50052934F3A300E5B308 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		6DCC500D2935093900E5B308 /* ReminderHistoryEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderHistoryEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6DCC500E2935093900E5B308 /* ReminderHistoryEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderHistoryEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6DD7FECB2938CECE00F9E89B /* BerARTi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BerARTi.entitlements; sourceTree = "<group>"; };
+		6DD7FECC2938CF8800F9E89B /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		6DEA0B82293B1E2600C226FC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		6DEA0B84293B1E2600C226FC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B806769E290C00DA00ECF5AB /* MedicineStockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineStockCell.swift; sourceTree = "<group>"; };
+		B80676A0290C07B000ECF5AB /* DashboardAppointmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardAppointmentCell.swift; sourceTree = "<group>"; };
+		B8118888291572EB00FC89B6 /* AddMedicineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicineView.swift; sourceTree = "<group>"; };
+		B811889129157D5A00FC89B6 /* SelectionChip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionChip.swift; sourceTree = "<group>"; };
+		B814EA652925F0E200EB211C /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B814EA662925F0E200EB211C /* ChangeNotificationMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNotificationMessageView.swift; sourceTree = "<group>"; };
+		B814EA672925F0E200EB211C /* ContactUsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactUsView.swift; sourceTree = "<group>"; };
+		B814EA6D2925FA5400EB211C /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		B814EA6F29260C4800EB211C /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		B81A3660291376460037C90E /* AddAppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAppointmentView.swift; sourceTree = "<group>"; };
+		B81A366329137AC10037C90E /* LocalNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		B81A366429137AC10037C90E /* LocalNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
+		B81EF26A2901153000EFAE7C /* BerARTi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BerARTi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81EF26D2901153000EFAE7C /* BerARTiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerARTiApp.swift; sourceTree = "<group>"; };
+		B81EF2712901153200EFAE7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B81EF2742901153200EFAE7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B81EF2762901153200EFAE7C /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		B81EF2852901186F00EFAE7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B81EF28A29011FAB00EFAE7C /* BerARTi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BerARTi.xcdatamodel; sourceTree = "<group>"; };
+		B81FD2172923502400E0AE6D /* AddBloodResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBloodResultViewModel.swift; sourceTree = "<group>"; };
+		B81FD21929235D8200E0AE6D /* BloodResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodResultModel.swift; sourceTree = "<group>"; };
+		B81FD21B29235EB200E0AE6D /* BloodResultEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BloodResultEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B81FD21C29235EB200E0AE6D /* BloodResultEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BloodResultEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B821EF91290F89C800879AED /* VitalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalView.swift; sourceTree = "<group>"; };
+		B821EF94290F89D600879AED /* AddBloodResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBloodResultView.swift; sourceTree = "<group>"; };
+		B84583A12926698200EC3449 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		B878E2512920A37900A4E153 /* TimePickerModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerModal.swift; sourceTree = "<group>"; };
+		B878E2532920DB0E00A4E153 /* CTAModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTAModal.swift; sourceTree = "<group>"; };
+		B878E2552920DFB700A4E153 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		B878E25A2921131400A4E153 /* AppointmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentViewModel.swift; sourceTree = "<group>"; };
+		B878E25F2921237200A4E153 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		B878E2612921241F00A4E153 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		B878E26A292149B500A4E153 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		B885C2F929081C8A00D95722 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B885C2FB2908334900D95722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B8A1C1AA291B629400AA833B /* CoreDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRepository.swift; sourceTree = "<group>"; };
+		B8BE48C7290A4FCE00A7E667 /* PrimaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonStyle.swift; sourceTree = "<group>"; };
+		B8BE48C9290A596E00A7E667 /* SecondaryButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButtonStyle.swift; sourceTree = "<group>"; };
+		B8C7BEEF2907D7FF00775D5D /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		B8C7BEF12907D87700775D5D /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+		B8C7BEF32907D8F100775D5D /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		B8C7BEF52907DA9E00775D5D /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		B8C7BEF72907DE8E00775D5D /* OnboardingContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerView.swift; sourceTree = "<group>"; };
+		B8C7BEF92907F0A100775D5D /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		B8C7BEFC2907F31E00775D5D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		B8C7BF022907F4B300775D5D /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		B8C7BF062907F4C400775D5D /* AppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentView.swift; sourceTree = "<group>"; };
+		B8C7BF082907F4CB00775D5D /* SocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialView.swift; sourceTree = "<group>"; };
+		B8C982BF291E6D5A00CCD8F2 /* ARVModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARVModel.swift; sourceTree = "<group>"; };
+		B8C982C1291E6EAA00CCD8F2 /* AddMedicineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicineViewModel.swift; sourceTree = "<group>"; };
+		B8CFFBC62923C2B60087F2ED /* VitalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalViewModel.swift; sourceTree = "<group>"; };
+		B8CFFBC82923C5080087F2ED /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		B8D48613292B194A009C7332 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		B8D48615292B2082009C7332 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		B8D48618292B39FD009C7332 /* ChangeNotificationMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNotificationMessageViewModel.swift; sourceTree = "<group>"; };
+		B8D4861A292B4C5C009C7332 /* AddAppointmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAppointmentViewModel.swift; sourceTree = "<group>"; };
+		B8D4861C292B6272009C7332 /* AppointmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentModel.swift; sourceTree = "<group>"; };
+		B8D4861E292B63E5009C7332 /* AppointmentEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppointmentEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B8D4861F292B63E5009C7332 /* AppointmentEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppointmentEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B8D70C6829181586007BA959 /* FormSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormSelector.swift; sourceTree = "<group>"; };
+		B8D70C6A29181B09007BA959 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		B8D8F49C2929362000E893CA /* CallManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
+		B8D8F49E2929363700E893CA /* CXCallUpdate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CXCallUpdate+Extension.swift"; sourceTree = "<group>"; };
+		B8D8F49F2929363700E893CA /* CXProviderConfiguration+Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CXProviderConfiguration+Sample.swift"; sourceTree = "<group>"; };
+		B8D8F4A02929363700E893CA /* CXProvider+Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CXProvider+Sample.swift"; sourceTree = "<group>"; };
+		B8D8F4A42929369800E893CA /* CallProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallProvider.swift; sourceTree = "<group>"; };
+		B8D8F4A6292936E100E893CA /* Notification.Name+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification.Name+Extension.swift"; sourceTree = "<group>"; };
+		B8D8F4A82929375800E893CA /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		B8D8F4AB292937FF00E893CA /* AppDelegate+PKPushRegistryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+PKPushRegistryDelegate.swift"; sourceTree = "<group>"; };
+		B8E928FD291D2178003CA530 /* MedicineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineModel.swift; sourceTree = "<group>"; };
+		B8E928FF291D225B003CA530 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		B8E9290D291D3B22003CA530 /* ReminderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderModel.swift; sourceTree = "<group>"; };
+		B8E92913291D49ED003CA530 /* MedicineEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MedicineEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B8E92914291D49ED003CA530 /* MedicineEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MedicineEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B8E92915291D49ED003CA530 /* ReminderEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReminderEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B8E92916291D49ED003CA530 /* ReminderEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReminderEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B8FCFF32290ACA3C00D34810 /* BloodResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodResultCell.swift; sourceTree = "<group>"; };
+		B8FCFF34290AD37A00D34810 /* ReminderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCell.swift; sourceTree = "<group>"; };
+		B8FCFF36290AE49900D34810 /* EmptySpacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySpacer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D7DD12F293B98580004C0E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D7DD134293B98580004C0E7 /* SwiftUI.framework in Frameworks */,
+				6D7DD133293B98580004C0E7 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81EF2672901153000EFAE7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC3F82D293325E30023018C /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D049E20293A1ED900797D02 /* Privacy Policy */ = {
+			isa = PBXGroup;
+			children = (
+				6D049E21293A1F0400797D02 /* PrivacyPolicyView.swift */,
+			);
+			path = "Privacy Policy";
+			sourceTree = "<group>";
+		};
+		6D049E2C293A5D3F00797D02 /* Article Detail */ = {
+			isa = PBXGroup;
+			children = (
+				6D28934F29367EEC00CB6535 /* ArticleDetailView.swift */,
+			);
+			path = "Article Detail";
+			sourceTree = "<group>";
+		};
+		6D0E998C2933B07A00485C9F /* Emotion History */ = {
+			isa = PBXGroup;
+			children = (
+				6D0E998D2933B1EE00485C9F /* EmotionHistoryView.swift */,
+				6D0E998F2933B2A900485C9F /* EmotionHistoryViewModel.swift */,
+			);
+			path = "Emotion History";
+			sourceTree = "<group>";
+		};
+		6D7DD12B293B969A0004C0E7 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				6D7DD12C293B96AA0004C0E7 /* EdgeBorder.swift */,
+				B878E2552920DFB700A4E153 /* RoundedCorner.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		6D7DD135293B98580004C0E7 /* BerARTi-Widget */ = {
+			isa = PBXGroup;
+			children = (
+				6D7DD136293B98580004C0E7 /* BerARTi_WidgetBundle.swift */,
+				6D7DD138293B98580004C0E7 /* BerARTi_Widget.swift */,
+				6D7DD148293B9AAF0004C0E7 /* Provider.swift */,
+				6D7DD143293B98920004C0E7 /* WidgetView.swift */,
+				6D7DD13C293B98590004C0E7 /* Info.plist */,
+			);
+			path = "BerARTi-Widget";
+			sourceTree = "<group>";
+		};
+		6D8159AB2931BA3F007A7040 /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				6D8159AC2931BA5A007A7040 /* HealthView.swift */,
+			);
+			path = Health;
+			sourceTree = "<group>";
+		};
+		6DBEEE582935F79300742217 /* JSON Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DBEEE592935FB0C00742217 /* quotes.json */,
+				6D28934D29367D5F00CB6535 /* funfacts.json */,
+			);
+			path = "JSON Files";
+			sourceTree = "<group>";
+		};
+		6DC3F82E293327480023018C /* Lottie Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DC3F8332933282A0023018C /* animation_emotion_angry.json */,
+				6DC3F831293328290023018C /* animation_emotion_anxious.json */,
+				6DC3F82F293328290023018C /* animation_emotion_happy.json */,
+				6DC3F832293328290023018C /* animation_emotion_loved.json */,
+				6D0E99952933C99300485C9F /* animation_emotion_healthy.json */,
+				6DBEEE562935D8DF00742217 /* animation_emotion_normal.json */,
+				6D0E99972933C9B300485C9F /* animation_emotion_sick.json */,
+				6D0E99992933C9EB00485C9F /* animation_emotion_stressed.json */,
+				6D0E999B2933CA0500485C9F /* animation_emotion_sad.json */,
+			);
+			path = "Lottie Files";
+			sourceTree = "<group>";
+		};
+		6DC749FA29322F4600F4489B /* Medicine */ = {
+			isa = PBXGroup;
+			children = (
+				B8118887291572CE00FC89B6 /* Add Medicine */,
+				6DC749FB29322F5C00F4489B /* MedicineView.swift */,
+				6DC749FD29322F6800F4489B /* MedicineViewModel.swift */,
+			);
+			path = Medicine;
+			sourceTree = "<group>";
+		};
+		6DC74A052932728700F4489B /* Emotion */ = {
+			isa = PBXGroup;
+			children = (
+				6D0E998C2933B07A00485C9F /* Emotion History */,
+				6DC74A0A2932824A00F4489B /* Emotion Intensity */,
+				6DC74A06293272B000F4489B /* EmotionSelectionView.swift */,
+			);
+			path = Emotion;
+			sourceTree = "<group>";
+		};
+		6DC74A0A2932824A00F4489B /* Emotion Intensity */ = {
+			isa = PBXGroup;
+			children = (
+				6DC3F839293328EA0023018C /* EmotionAnimationViewRepresentation.swift */,
+				6DC3F86F293347B70023018C /* EmotionAnimationView.swift */,
+				6DC74A0B2932825900F4489B /* EmotionIntensityView.swift */,
+				6DC74A0D2932827800F4489B /* EmotionIntensityViewModel.swift */,
+			);
+			path = "Emotion Intensity";
+			sourceTree = "<group>";
+		};
+		6DC74A0F293285A600F4489B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6DC74A10293285B400F4489B /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		6DCC50072934FFDD00E5B308 /* Emotion */ = {
+			isa = PBXGroup;
+			children = (
+				6D0E99872933A8CC00485C9F /* EmotionEntity+CoreDataProperties.swift */,
+				6D0E99862933A8CC00485C9F /* EmotionEntity+CoreDataClass.swift */,
+			);
+			path = Emotion;
+			sourceTree = "<group>";
+		};
+		6DCC50082934FFE600E5B308 /* Medicine */ = {
+			isa = PBXGroup;
+			children = (
+				B8E92913291D49ED003CA530 /* MedicineEntity+CoreDataProperties.swift */,
+				B8E92914291D49ED003CA530 /* MedicineEntity+CoreDataClass.swift */,
+			);
+			path = Medicine;
+			sourceTree = "<group>";
+		};
+		6DCC50092934FFF000E5B308 /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				B8E92916291D49ED003CA530 /* ReminderEntity+CoreDataClass.swift */,
+				B8E92915291D49ED003CA530 /* ReminderEntity+CoreDataProperties.swift */,
+				6DCC500D2935093900E5B308 /* ReminderHistoryEntity+CoreDataClass.swift */,
+				6DCC500E2935093900E5B308 /* ReminderHistoryEntity+CoreDataProperties.swift */,
+			);
+			path = Reminder;
+			sourceTree = "<group>";
+		};
+		6DCC500A2934FFF800E5B308 /* Blood Result */ = {
+			isa = PBXGroup;
+			children = (
+				B81FD21B29235EB200E0AE6D /* BloodResultEntity+CoreDataClass.swift */,
+				B81FD21C29235EB200E0AE6D /* BloodResultEntity+CoreDataProperties.swift */,
+			);
+			path = "Blood Result";
+			sourceTree = "<group>";
+		};
+		6DCC500B2935000200E5B308 /* Appointment */ = {
+			isa = PBXGroup;
+			children = (
+				B8D4861E292B63E5009C7332 /* AppointmentEntity+CoreDataClass.swift */,
+				B8D4861F292B63E5009C7332 /* AppointmentEntity+CoreDataProperties.swift */,
+			);
+			path = Appointment;
+			sourceTree = "<group>";
+		};
+		6DEA0B81293B1E2600C226FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DEA0B82293B1E2600C226FC /* WidgetKit.framework */,
+				6DEA0B84293B1E2600C226FC /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8118887291572CE00FC89B6 /* Add Medicine */ = {
+			isa = PBXGroup;
+			children = (
+				B8118888291572EB00FC89B6 /* AddMedicineView.swift */,
+				B8C982C1291E6EAA00CCD8F2 /* AddMedicineViewModel.swift */,
+			);
+			path = "Add Medicine";
+			sourceTree = "<group>";
+		};
+		B811889029157CAF00FC89B6 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				B878E25E2921235F00A4E153 /* Medicine Bottle */,
+				B8FCFF36290AE49900D34810 /* EmptySpacer.swift */,
+				B811889129157D5A00FC89B6 /* SelectionChip.swift */,
+				B8D70C6829181586007BA959 /* FormSelector.swift */,
+				B8D70C6A29181B09007BA959 /* FormTextField.swift */,
+				B814EA6D2925FA5400EB211C /* SettingsRowView.swift */,
+				6D9C58FC2934A3EE0003FD31 /* InputEmotionView.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		B814EA642925F0C800EB211C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6D049E20293A1ED900797D02 /* Privacy Policy */,
+				B8D48617292B368C009C7332 /* Change Notification Message */,
+				B814EA7129260D0D00EB211C /* Contact Us */,
+				B814EA652925F0E200EB211C /* SettingsView.swift */,
+				B814EA6F29260C4800EB211C /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		B814EA7129260D0D00EB211C /* Contact Us */ = {
+			isa = PBXGroup;
+			children = (
+				B814EA672925F0E200EB211C /* ContactUsView.swift */,
+			);
+			path = "Contact Us";
+			sourceTree = "<group>";
+		};
+		B81A365F2913762C0037C90E /* Add Appointment */ = {
+			isa = PBXGroup;
+			children = (
+				B81A3660291376460037C90E /* AddAppointmentView.swift */,
+				B8D4861A292B4C5C009C7332 /* AddAppointmentViewModel.swift */,
+			);
+			path = "Add Appointment";
+			sourceTree = "<group>";
+		};
+		B81A366229137AB50037C90E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B8D8F49C2929362000E893CA /* CallManager.swift */,
+				B8D8F4A42929369800E893CA /* CallProvider.swift */,
+				B81A366329137AC10037C90E /* LocalNotificationManager.swift */,
+				B8D48613292B194A009C7332 /* HapticsManager.swift */,
+				6DD7FECC2938CF8800F9E89B /* HealthKitManager.swift */,
+				6DA8939F293A0667006E91A0 /* HealthKitDataCalculator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B81EF2612901153000EFAE7C = {
+			isa = PBXGroup;
+			children = (
+				B81EF26C2901153000EFAE7C /* BerARTi */,
+				6D7DD135293B98580004C0E7 /* BerARTi-Widget */,
+				6DEA0B81293B1E2600C226FC /* Frameworks */,
+				B81EF26B2901153000EFAE7C /* Products */,
+				B8E92911291D49B4003CA530 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		B81EF26B2901153000EFAE7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B81EF26A2901153000EFAE7C /* BerARTi.app */,
+				6D7DD132293B98580004C0E7 /* BerARTi-WidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B81EF26C2901153000EFAE7C /* BerARTi */ = {
+			isa = PBXGroup;
+			children = (
+				6DD7FECB2938CECE00F9E89B /* BerARTi.entitlements */,
+				B885C2FB2908334900D95722 /* Info.plist */,
+				B81EF2842901185800EFAE7C /* Utilities */,
+				B81EF2832901185400EFAE7C /* Models */,
+				B81EF2822901184A00EFAE7C /* Persistence */,
+				B81EF2812901182A00EFAE7C /* Life Cycle */,
+				B81EF2802901182200EFAE7C /* Views */,
+				B81EF2712901153200EFAE7C /* Assets.xcassets */,
+				B81EF2732901153200EFAE7C /* Preview Content */,
+			);
+			path = BerARTi;
+			sourceTree = "<group>";
+		};
+		B81EF2732901153200EFAE7C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B81EF2742901153200EFAE7C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B81EF2802901182200EFAE7C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6DC74A0F293285A600F4489B /* Profile */,
+				B814EA642925F0C800EB211C /* Settings */,
+				B821EF90290F89A400879AED /* Vitals */,
+				6DC749FA29322F4600F4489B /* Medicine */,
+				B8C7BF002907F33900775D5D /* Appointment */,
+				6DC74A052932728700F4489B /* Emotion */,
+				B8C7BEFE2907F32900775D5D /* Dashboard */,
+				6D8159AB2931BA3F007A7040 /* Health */,
+				B8C7BF012907F33E00775D5D /* Social */,
+				B8C7BEFB2907F30F00775D5D /* Main Tab */,
+				B8C7BEEE2907D78900775D5D /* Onboarding */,
+				B885C2F829081C4E00D95722 /* Launch Screen */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B81EF2812901182A00EFAE7C /* Life Cycle */ = {
+			isa = PBXGroup;
+			children = (
+				B8D8F4AA292937B700E893CA /* App Delegate */,
+				B81EF26D2901153000EFAE7C /* BerARTiApp.swift */,
+			);
+			path = "Life Cycle";
+			sourceTree = "<group>";
+		};
+		B81EF2822901184A00EFAE7C /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				B8E92912291D49ED003CA530 /* Core Data Model */,
+				B8A1C1AA291B629400AA833B /* CoreDataRepository.swift */,
+				B81EF2762901153200EFAE7C /* CoreDataStack.swift */,
+				B81EF28929011FAB00EFAE7C /* BerARTi.xcdatamodeld */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		B81EF2832901185400EFAE7C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B8E928FF291D225B003CA530 /* Enums.swift */,
+				B81A366429137AC10037C90E /* LocalNotification.swift */,
+				B8E928FD291D2178003CA530 /* MedicineModel.swift */,
+				B8E9290D291D3B22003CA530 /* ReminderModel.swift */,
+				B8C982BF291E6D5A00CCD8F2 /* ARVModel.swift */,
+				B81FD21929235D8200E0AE6D /* BloodResultModel.swift */,
+				B8D48615292B2082009C7332 /* OnboardingModel.swift */,
+				B8D4861C292B6272009C7332 /* AppointmentModel.swift */,
+				6D0E998A2933A90C00485C9F /* EmotionModel.swift */,
+				6DBEEE5B2935FB3800742217 /* Quote.swift */,
+				6D289353293686A100CB6535 /* FunFact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B81EF2842901185800EFAE7C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B878E2612921241F00A4E153 /* GameScene.sks */,
+				6DC3F82E293327480023018C /* Lottie Files */,
+				6DBEEE582935F79300742217 /* JSON Files */,
+				B81A366229137AB50037C90E /* Helpers */,
+				B8BE48C6290A4F9D00A7E667 /* Reusable Views */,
+				B81EF28729011B7E00EFAE7C /* Extensions */,
+				B8C7BEF32907D8F100775D5D /* Assets.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B81EF28729011B7E00EFAE7C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B8D8F49E2929363700E893CA /* CXCallUpdate+Extension.swift */,
+				B8D8F4A02929363700E893CA /* CXProvider+Sample.swift */,
+				B8D8F49F2929363700E893CA /* CXProviderConfiguration+Sample.swift */,
+				B8C7BEEF2907D7FF00775D5D /* Color+Extension.swift */,
+				B8C7BEF52907DA9E00775D5D /* Font+Extension.swift */,
+				B8C7BEF92907F0A100775D5D /* View+Extension.swift */,
+				B8CFFBC82923C5080087F2ED /* Date+Extension.swift */,
+				B84583A12926698200EC3449 /* UserDefaults+Extension.swift */,
+				B8D8F4A6292936E100E893CA /* Notification.Name+Extension.swift */,
+				B8D8F4A82929375800E893CA /* Data+Extension.swift */,
+				6DC74A0129323DA400F4489B /* PreviewDevice+Extension.swift */,
+				6DCC50052934F3A300E5B308 /* UIStackView+Extension.swift */,
+				6DA8939D2939ED5A006E91A0 /* HKUnit+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B821EF90290F89A400879AED /* Vitals */ = {
+			isa = PBXGroup;
+			children = (
+				B821EF93290F89CB00879AED /* Add Blood Result */,
+				B821EF91290F89C800879AED /* VitalView.swift */,
+				B8CFFBC62923C2B60087F2ED /* VitalViewModel.swift */,
+			);
+			path = Vitals;
+			sourceTree = "<group>";
+		};
+		B821EF93290F89CB00879AED /* Add Blood Result */ = {
+			isa = PBXGroup;
+			children = (
+				B821EF94290F89D600879AED /* AddBloodResultView.swift */,
+				B81FD2172923502400E0AE6D /* AddBloodResultViewModel.swift */,
+			);
+			path = "Add Blood Result";
+			sourceTree = "<group>";
+		};
+		B878E2592920E2D800A4E153 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				B878E2512920A37900A4E153 /* TimePickerModal.swift */,
+				B878E2532920DB0E00A4E153 /* CTAModal.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		B878E25E2921235F00A4E153 /* Medicine Bottle */ = {
+			isa = PBXGroup;
+			children = (
+				B878E25F2921237200A4E153 /* GameScene.swift */,
+			);
+			path = "Medicine Bottle";
+			sourceTree = "<group>";
+		};
+		B885C2F829081C4E00D95722 /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				B885C2F929081C8A00D95722 /* LaunchScreen.storyboard */,
+			);
+			path = "Launch Screen";
+			sourceTree = "<group>";
+		};
+		B8BE48C6290A4F9D00A7E667 /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D7DD12B293B969A0004C0E7 /* Shapes */,
+				B8BE48CB290A6C4000A7E667 /* Button Styles */,
+				B8BE48CC290A6C4900A7E667 /* Cells */,
+				B878E2592920E2D800A4E153 /* Modals */,
+				B811889029157CAF00FC89B6 /* Others */,
+			);
+			path = "Reusable Views";
+			sourceTree = "<group>";
+		};
+		B8BE48CB290A6C4000A7E667 /* Button Styles */ = {
+			isa = PBXGroup;
+			children = (
+				B8BE48C7290A4FCE00A7E667 /* PrimaryButtonStyle.swift */,
+				B8BE48C9290A596E00A7E667 /* SecondaryButtonStyle.swift */,
+			);
+			path = "Button Styles";
+			sourceTree = "<group>";
+		};
+		B8BE48CC290A6C4900A7E667 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B8FCFF32290ACA3C00D34810 /* BloodResultCell.swift */,
+				B8FCFF34290AD37A00D34810 /* ReminderCell.swift */,
+				6D289357293692BB00CB6535 /* ReminderListCell.swift */,
+				B806769E290C00DA00ECF5AB /* MedicineStockCell.swift */,
+				B80676A0290C07B000ECF5AB /* DashboardAppointmentCell.swift */,
+				6DC749FF293238F900F4489B /* SupplementWeekProgressCell.swift */,
+				6DC74A08293278F800F4489B /* EmotionGridCell.swift */,
+				6D0E99912933B68B00485C9F /* EmotionCell.swift */,
+				6D426D062934D12D0058B90A /* DateCell.swift */,
+				6DC74A03293263CE00F4489B /* FunFactCell.swift */,
+				6D28935129367F6C00CB6535 /* ArticleCell.swift */,
+				6DA8939B2939DF1F006E91A0 /* VitalDataCell.swift */,
+				6D049E23293A414E00797D02 /* SocialBannerView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B8C7BEEE2907D78900775D5D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B8C7BEF12907D87700775D5D /* OnboardingPageView.swift */,
+				B8C7BEF72907DE8E00775D5D /* OnboardingContainerView.swift */,
+				6D2893492936742300CB6535 /* OnboardingGreetingView.swift */,
+				6D28934B2936784300CB6535 /* OnboardingNameView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B8C7BEFB2907F30F00775D5D /* Main Tab */ = {
+			isa = PBXGroup;
+			children = (
+				B8C7BEFC2907F31E00775D5D /* MainTabView.swift */,
+				6D0E99932933C44000485C9F /* MainTabViewModel.swift */,
+			);
+			path = "Main Tab";
+			sourceTree = "<group>";
+		};
+		B8C7BEFE2907F32900775D5D /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				B8C7BF022907F4B300775D5D /* DashboardView.swift */,
+				B878E26A292149B500A4E153 /* DashboardViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		B8C7BF002907F33900775D5D /* Appointment */ = {
+			isa = PBXGroup;
+			children = (
+				B81A365F2913762C0037C90E /* Add Appointment */,
+				B8C7BF062907F4C400775D5D /* AppointmentView.swift */,
+				B878E25A2921131400A4E153 /* AppointmentViewModel.swift */,
+			);
+			path = Appointment;
+			sourceTree = "<group>";
+		};
+		B8C7BF012907F33E00775D5D /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				6D049E2C293A5D3F00797D02 /* Article Detail */,
+				B8C7BF082907F4CB00775D5D /* SocialView.swift */,
+				6D2893552936870600CB6535 /* SocialViewModel.swift */,
+			);
+			path = Social;
+			sourceTree = "<group>";
+		};
+		B8D48617292B368C009C7332 /* Change Notification Message */ = {
+			isa = PBXGroup;
+			children = (
+				B814EA662925F0E200EB211C /* ChangeNotificationMessageView.swift */,
+				B8D48618292B39FD009C7332 /* ChangeNotificationMessageViewModel.swift */,
+			);
+			path = "Change Notification Message";
+			sourceTree = "<group>";
+		};
+		B8D8F4AA292937B700E893CA /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				B81EF2852901186F00EFAE7C /* AppDelegate.swift */,
+				B8D8F4AB292937FF00E893CA /* AppDelegate+PKPushRegistryDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		B8E92911291D49B4003CA530 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		B8E92912291D49ED003CA530 /* Core Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				6DCC500B2935000200E5B308 /* Appointment */,
+				6DCC500A2934FFF800E5B308 /* Blood Result */,
+				6DCC50092934FFF000E5B308 /* Reminder */,
+				6DCC50082934FFE600E5B308 /* Medicine */,
+				6DCC50072934FFDD00E5B308 /* Emotion */,
+			);
+			path = "Core Data Model";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D7DD131293B98580004C0E7 /* BerARTi-WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D7DD140293B98590004C0E7 /* Build configuration list for PBXNativeTarget "BerARTi-WidgetExtension" */;
+			buildPhases = (
+				6D7DD12E293B98580004C0E7 /* Sources */,
+				6D7DD12F293B98580004C0E7 /* Frameworks */,
+				6D7DD130293B98580004C0E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BerARTi-WidgetExtension";
+			productName = "BerARTi-WidgetExtension";
+			productReference = 6D7DD132293B98580004C0E7 /* BerARTi-WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B81EF2692901153000EFAE7C /* BerARTi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B81EF27D2901153200EFAE7C /* Build configuration list for PBXNativeTarget "BerARTi" */;
+			buildPhases = (
+				B81EF2662901153000EFAE7C /* Sources */,
+				B81EF2672901153000EFAE7C /* Frameworks */,
+				B81EF2682901153000EFAE7C /* Resources */,
+				6DEA0B96293B1E2800C226FC /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D7DD13E293B98590004C0E7 /* PBXTargetDependency */,
+			);
+			name = BerARTi;
+			packageProductDependencies = (
+				6DC3F82C293325E30023018C /* Lottie */,
+			);
+			productName = berARTi;
+			productReference = B81EF26A2901153000EFAE7C /* BerARTi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B81EF2622901153000EFAE7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					6D7DD131293B98580004C0E7 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					B81EF2692901153000EFAE7C = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = B81EF2652901153000EFAE7C /* Build configuration list for PBXProject "BerARTi" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B81EF2612901153000EFAE7C;
+			packageReferences = (
+				6DC3F82B293325E30023018C /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
+			productRefGroup = B81EF26B2901153000EFAE7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B81EF2692901153000EFAE7C /* BerARTi */,
+				6D7DD131293B98580004C0E7 /* BerARTi-WidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D7DD130293B98580004C0E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D7DD14A293B9B9B0004C0E7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81EF2682901153000EFAE7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B878E2622921241F00A4E153 /* GameScene.sks in Resources */,
+				6D0E999A2933C9EB00485C9F /* animation_emotion_stressed.json in Resources */,
+				6D0E999C2933CA0500485C9F /* animation_emotion_sad.json in Resources */,
+				6DBEEE572935D8DF00742217 /* animation_emotion_normal.json in Resources */,
+				B885C2FA29081C8A00D95722 /* LaunchScreen.storyboard in Resources */,
+				6DC3F8382933282A0023018C /* animation_emotion_angry.json in Resources */,
+				6D0E99962933C99300485C9F /* animation_emotion_healthy.json in Resources */,
+				6DC3F8342933282A0023018C /* animation_emotion_happy.json in Resources */,
+				B81EF2752901153200EFAE7C /* Preview Assets.xcassets in Resources */,
+				6DC3F8362933282A0023018C /* animation_emotion_anxious.json in Resources */,
+				6DBEEE5A2935FB0C00742217 /* quotes.json in Resources */,
+				6D0E99982933C9B300485C9F /* animation_emotion_sick.json in Resources */,
+				B81EF2722901153200EFAE7C /* Assets.xcassets in Resources */,
+				6D28934E29367D5F00CB6535 /* funfacts.json in Resources */,
+				6DC3F8372933282A0023018C /* animation_emotion_loved.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D7DD12E293B98580004C0E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D7DD147293B998F0004C0E7 /* RoundedCorner.swift in Sources */,
+				6D7DD144293B98920004C0E7 /* WidgetView.swift in Sources */,
+				6D7DD14D293B9C3B0004C0E7 /* Enums.swift in Sources */,
+				6D7DD149293B9AAF0004C0E7 /* Provider.swift in Sources */,
+				6D7DD137293B98580004C0E7 /* BerARTi_WidgetBundle.swift in Sources */,
+				6D7DD145293B98D30004C0E7 /* View+Extension.swift in Sources */,
+				6D7DD139293B98580004C0E7 /* BerARTi_Widget.swift in Sources */,
+				6D7DD146293B98D70004C0E7 /* EdgeBorder.swift in Sources */,
+				6D7DD14B293B9BAC0004C0E7 /* Color+Extension.swift in Sources */,
+				6D7DD14C293B9C170004C0E7 /* Assets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B81EF2662901153000EFAE7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0E99902933B2A900485C9F /* EmotionHistoryViewModel.swift in Sources */,
+				6DA8939E2939ED5A006E91A0 /* HKUnit+Extension.swift in Sources */,
+				6D426D072934D12D0058B90A /* DateCell.swift in Sources */,
+				B8BE48C8290A4FCE00A7E667 /* PrimaryButtonStyle.swift in Sources */,
+				6DA893A0293A0667006E91A0 /* HealthKitDataCalculator.swift in Sources */,
+				B814EA6A2925F0E200EB211C /* ChangeNotificationMessageView.swift in Sources */,
+				B81EF2772901153200EFAE7C /* CoreDataStack.swift in Sources */,
+				B8D48614292B194A009C7332 /* HapticsManager.swift in Sources */,
+				B878E2562920DFB700A4E153 /* RoundedCorner.swift in Sources */,
+				B878E26B292149B500A4E153 /* DashboardViewModel.swift in Sources */,
+				6D8159AD2931BA5A007A7040 /* HealthView.swift in Sources */,
+				B8BE48CA290A596E00A7E667 /* SecondaryButtonStyle.swift in Sources */,
+				6D28934A2936742300CB6535 /* OnboardingGreetingView.swift in Sources */,
+				6D0E998B2933A90C00485C9F /* EmotionModel.swift in Sources */,
+				6DC74A04293263CE00F4489B /* FunFactCell.swift in Sources */,
+				B8D8F4A7292936E100E893CA /* Notification.Name+Extension.swift in Sources */,
+				B8CFFBC92923C5080087F2ED /* Date+Extension.swift in Sources */,
+				B8D4861D292B6272009C7332 /* AppointmentModel.swift in Sources */,
+				B8E92900291D225B003CA530 /* Enums.swift in Sources */,
+				B8E92917291D49ED003CA530 /* MedicineEntity+CoreDataProperties.swift in Sources */,
+				B81A3661291376460037C90E /* AddAppointmentView.swift in Sources */,
+				B8FCFF33290ACA3C00D34810 /* BloodResultCell.swift in Sources */,
+				B8D8F4A32929363700E893CA /* CXProvider+Sample.swift in Sources */,
+				B8D48621292B63E5009C7332 /* AppointmentEntity+CoreDataProperties.swift in Sources */,
+				B8C7BEF22907D87700775D5D /* OnboardingPageView.swift in Sources */,
+				6D289354293686A100CB6535 /* FunFact.swift in Sources */,
+				B8D48620292B63E5009C7332 /* AppointmentEntity+CoreDataClass.swift in Sources */,
+				6D0E99892933A8CC00485C9F /* EmotionEntity+CoreDataProperties.swift in Sources */,
+				6D0E99942933C44000485C9F /* MainTabViewModel.swift in Sources */,
+				6DC3F83A293328EA0023018C /* EmotionAnimationViewRepresentation.swift in Sources */,
+				B8C7BEF42907D8F100775D5D /* Assets.swift in Sources */,
+				B8C7BEF02907D7FF00775D5D /* Color+Extension.swift in Sources */,
+				B8C7BEF62907DA9E00775D5D /* Font+Extension.swift in Sources */,
+				B8D8F4A22929363700E893CA /* CXProviderConfiguration+Sample.swift in Sources */,
+				B81EF28B29011FAB00EFAE7C /* BerARTi.xcdatamodeld in Sources */,
+				6D2893562936870600CB6535 /* SocialViewModel.swift in Sources */,
+				6D28935229367F6C00CB6535 /* ArticleCell.swift in Sources */,
+				B81FD21D29235EB200E0AE6D /* BloodResultEntity+CoreDataClass.swift in Sources */,
+				6DD7FECD2938CF8800F9E89B /* HealthKitManager.swift in Sources */,
+				B81A366829137AC20037C90E /* LocalNotification.swift in Sources */,
+				B8D8F4A12929363700E893CA /* CXCallUpdate+Extension.swift in Sources */,
+				6D0E998E2933B1EE00485C9F /* EmotionHistoryView.swift in Sources */,
+				B878E2542920DB0E00A4E153 /* CTAModal.swift in Sources */,
+				B8E92918291D49ED003CA530 /* MedicineEntity+CoreDataClass.swift in Sources */,
+				B8D8F4AC292937FF00E893CA /* AppDelegate+PKPushRegistryDelegate.swift in Sources */,
+				B8FCFF35290AD37A00D34810 /* ReminderCell.swift in Sources */,
+				B8E92919291D49ED003CA530 /* ReminderEntity+CoreDataProperties.swift in Sources */,
+				6DC74A09293278F800F4489B /* EmotionGridCell.swift in Sources */,
+				B8C7BEFA2907F0A100775D5D /* View+Extension.swift in Sources */,
+				B8E9290E291D3B22003CA530 /* ReminderModel.swift in Sources */,
+				6DC74A0C2932825900F4489B /* EmotionIntensityView.swift in Sources */,
+				B811889229157D5A00FC89B6 /* SelectionChip.swift in Sources */,
+				B8C7BEF82907DE8E00775D5D /* OnboardingContainerView.swift in Sources */,
+				6D0E99882933A8CC00485C9F /* EmotionEntity+CoreDataClass.swift in Sources */,
+				B821EF95290F89D600879AED /* AddBloodResultView.swift in Sources */,
+				6DC74A11293285B400F4489B /* ProfileView.swift in Sources */,
+				B81A366729137AC20037C90E /* LocalNotificationManager.swift in Sources */,
+				6D9C58FD2934A3EE0003FD31 /* InputEmotionView.swift in Sources */,
+				B8118889291572EB00FC89B6 /* AddMedicineView.swift in Sources */,
+				6DC749FC29322F5C00F4489B /* MedicineView.swift in Sources */,
+				B8CFFBC72923C2B60087F2ED /* VitalViewModel.swift in Sources */,
+				B8D4861B292B4C5C009C7332 /* AddAppointmentViewModel.swift in Sources */,
+				6DA8939C2939DF1F006E91A0 /* VitalDataCell.swift in Sources */,
+				6DCC500F2935093900E5B308 /* ReminderHistoryEntity+CoreDataClass.swift in Sources */,
+				B806769F290C00DA00ECF5AB /* MedicineStockCell.swift in Sources */,
+				B81EF2862901186F00EFAE7C /* AppDelegate.swift in Sources */,
+				B8C982C0291E6D5A00CCD8F2 /* ARVModel.swift in Sources */,
+				B80676A1290C07B000ECF5AB /* DashboardAppointmentCell.swift in Sources */,
+				6DC74A0229323DA400F4489B /* PreviewDevice+Extension.swift in Sources */,
+				B8C7BF092907F4CB00775D5D /* SocialView.swift in Sources */,
+				B8D48619292B39FD009C7332 /* ChangeNotificationMessageViewModel.swift in Sources */,
+				B814EA7029260C4800EB211C /* SettingsViewModel.swift in Sources */,
+				6DC74A0E2932827900F4489B /* EmotionIntensityViewModel.swift in Sources */,
+				6D28934C2936784300CB6535 /* OnboardingNameView.swift in Sources */,
+				B8D70C6929181586007BA959 /* FormSelector.swift in Sources */,
+				B81FD2182923502400E0AE6D /* AddBloodResultViewModel.swift in Sources */,
+				6DC74A00293238F900F4489B /* SupplementWeekProgressCell.swift in Sources */,
+				6D049E24293A414E00797D02 /* SocialBannerView.swift in Sources */,
+				6DC3F870293347B70023018C /* EmotionAnimationView.swift in Sources */,
+				B814EA6E2925FA5400EB211C /* SettingsRowView.swift in Sources */,
+				B814EA692925F0E200EB211C /* SettingsView.swift in Sources */,
+				B8C7BF072907F4C400775D5D /* AppointmentView.swift in Sources */,
+				B8C982C2291E6EAA00CCD8F2 /* AddMedicineViewModel.swift in Sources */,
+				B81FD21A29235D8200E0AE6D /* BloodResultModel.swift in Sources */,
+				6D289358293692BB00CB6535 /* ReminderListCell.swift in Sources */,
+				6DC749FE29322F6800F4489B /* MedicineViewModel.swift in Sources */,
+				B81EF26E2901153000EFAE7C /* BerARTiApp.swift in Sources */,
+				6D28935029367EEC00CB6535 /* ArticleDetailView.swift in Sources */,
+				6DBEEE5C2935FB3800742217 /* Quote.swift in Sources */,
+				B8FCFF37290AE49900D34810 /* EmptySpacer.swift in Sources */,
+				B8A1C1AB291B629400AA833B /* CoreDataRepository.swift in Sources */,
+				6DCC50062934F3A300E5B308 /* UIStackView+Extension.swift in Sources */,
+				6DCC50102935093900E5B308 /* ReminderHistoryEntity+CoreDataProperties.swift in Sources */,
+				B821EF92290F89C800879AED /* VitalView.swift in Sources */,
+				6D049E22293A1F0400797D02 /* PrivacyPolicyView.swift in Sources */,
+				B8D70C6B29181B09007BA959 /* FormTextField.swift in Sources */,
+				6DC74A07293272B000F4489B /* EmotionSelectionView.swift in Sources */,
+				B878E2522920A37900A4E153 /* TimePickerModal.swift in Sources */,
+				B814EA6B2925F0E200EB211C /* ContactUsView.swift in Sources */,
+				6D0E99922933B68B00485C9F /* EmotionCell.swift in Sources */,
+				B8C7BF032907F4B300775D5D /* DashboardView.swift in Sources */,
+				B8D8F49D2929362000E893CA /* CallManager.swift in Sources */,
+				B8D48616292B2082009C7332 /* OnboardingModel.swift in Sources */,
+				B81FD21E29235EB200E0AE6D /* BloodResultEntity+CoreDataProperties.swift in Sources */,
+				B84583A22926698200EC3449 /* UserDefaults+Extension.swift in Sources */,
+				6D7DD12D293B96AA0004C0E7 /* EdgeBorder.swift in Sources */,
+				B8D8F4A92929375800E893CA /* Data+Extension.swift in Sources */,
+				B878E2602921237200A4E153 /* GameScene.swift in Sources */,
+				B8C7BEFD2907F31E00775D5D /* MainTabView.swift in Sources */,
+				B8E928FE291D2178003CA530 /* MedicineModel.swift in Sources */,
+				B878E25B2921131400A4E153 /* AppointmentViewModel.swift in Sources */,
+				B8D8F4A52929369800E893CA /* CallProvider.swift in Sources */,
+				B8E9291A291D49ED003CA530 /* ReminderEntity+CoreDataClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D7DD13E293B98590004C0E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D7DD131293B98580004C0E7 /* BerARTi-WidgetExtension */;
+			targetProxy = 6D7DD13D293B98590004C0E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6D7DD141293B98590004C0E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6J2XDDYT2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BerARTi-Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BerARTi-Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cleanrun.BerARTi.BerARTi-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6D7DD142293B98590004C0E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6J2XDDYT2W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BerARTi-Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BerARTi-Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cleanrun.BerARTi.BerARTi-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B81EF27B2901153200EFAE7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B81EF27C2901153200EFAE7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B81EF27E2901153200EFAE7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BerARTi/BerARTi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 03122022;
+				DEVELOPMENT_ASSET_PATHS = "\"berARTi/Preview Content\"";
+				DEVELOPMENT_TEAM = 6J2XDDYT2W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BerARTi/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BerARTi;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "This app needs your permission to add appointment events to your calendar.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "This app needs your permission to enable Biometric Authentication access";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app needs your permission to read your health data to show the recent data of your vitals";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app needs your permission to read your health data to show the recent data of your vitals";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cleanrun.BerARTi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B81EF27F2901153200EFAE7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BerARTi/BerARTi.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 03122022;
+				DEVELOPMENT_ASSET_PATHS = "\"berARTi/Preview Content\"";
+				DEVELOPMENT_TEAM = 6J2XDDYT2W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BerARTi/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BerARTi;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "This app needs your permission to add appointment events to your calendar.";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "This app needs your permission to enable Biometric Authentication access";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app needs your permission to read your health data to show the recent data of your vitals";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app needs your permission to read your health data to show the recent data of your vitals";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cleanrun.BerARTi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D7DD140293B98590004C0E7 /* Build configuration list for PBXNativeTarget "BerARTi-WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D7DD141293B98590004C0E7 /* Debug */,
+				6D7DD142293B98590004C0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B81EF2652901153000EFAE7C /* Build configuration list for PBXProject "BerARTi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B81EF27B2901153200EFAE7C /* Debug */,
+				B81EF27C2901153200EFAE7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B81EF27D2901153200EFAE7C /* Build configuration list for PBXNativeTarget "BerARTi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B81EF27E2901153200EFAE7C /* Debug */,
+				B81EF27F2901153200EFAE7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6DC3F82B293325E30023018C /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6DC3F82C293325E30023018C /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DC3F82B293325E30023018C /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		B81EF28929011FAB00EFAE7C /* BerARTi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B81EF28A29011FAB00EFAE7C /* BerARTi.xcdatamodel */,
+			);
+			currentVersion = B81EF28A29011FAB00EFAE7C /* BerARTi.xcdatamodel */;
+			path = BerARTi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B81EF2622901153000EFAE7C /* Project object */;
+}
