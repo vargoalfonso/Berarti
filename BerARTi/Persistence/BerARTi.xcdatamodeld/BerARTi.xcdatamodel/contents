@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="21G217" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AppointmentEntity" representedClassName="AppointmentEntity" syncable="YES">
+        <attribute name="addToCalendar" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="appointmentId" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="time" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="BloodResultEntity" representedClassName="BloodResultEntity" syncable="YES">
+        <attribute name="bloodResultId" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="cd4Amount" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="testDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="testTime" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="viralLoadAmount" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="EmotionEntity" representedClassName="EmotionEntity" syncable="YES">
+        <attribute name="emotionId" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="emotionTypeId" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="intensity" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="story" attributeType="String"/>
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="MedicineEntity" representedClassName="MedicineEntity" syncable="YES">
+        <attribute name="arvId" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="frequency" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="medicineId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="remindbefore" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="ReminderEntity" representedClassName="ReminderEntity" syncable="YES">
+        <attribute name="arvId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="hour" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="medicineId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="minute" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="remindbefore" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="reminderId" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="ReminderHistoryEntity" representedClassName="ReminderHistoryEntity" syncable="YES">
+        <attribute name="reminderHistoryId" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="reminderId" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+</model>
